@@ -1,7 +1,7 @@
 {
     "name": "sjq-cache-api",
     "version": "1.0.0",
-    "main": "src/index.js",
+    "main": "index.js",
     "description": "",
     "author": "sunjiaqi<2412772489@qq.com>"
   } 
