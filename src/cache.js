@@ -1,4 +1,4 @@
-class Cache {
+export default class Cache {
   constructor(options) {
     this.cache = {}
     this.options = options || {expiresIn: 60 * 1000}
