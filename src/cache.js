@@ -23,7 +23,7 @@ export default class Cache {
     }
     clearTimeout(this.timer)   
     this.timer = setTimeout(() => {  
-      this.clearCache()
+      this.delete(key)
     }, this.options.expiresIn)
   }
   
