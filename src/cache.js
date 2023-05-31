@@ -1,3 +1,4 @@
+import md5 from 'md5'
 export default class Cache {
   constructor(options) {
     this.cache = {}
@@ -7,6 +8,12 @@ export default class Cache {
   
   get(key) {
     return this.cache[key]
+  }
+
+  getKey(url,params) {
+    const key = { ...url, ...params }
+    const jsonKey = JSON.stringify(key)
+    return md5(jsonKey)
   }
   
   set(key, value) {

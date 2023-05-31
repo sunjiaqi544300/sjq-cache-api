@@ -2,5 +2,8 @@
  * @Author: sunjiaqi
  */
 import SjqCacheApi from './src/jq-cache-api'
-
-export default SjqCacheApi
+import Cache from './cache'
+export default {
+    SjqCacheApi,
+    Cache,
+}
